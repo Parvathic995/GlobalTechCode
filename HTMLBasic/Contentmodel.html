@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Content model </title>	
+</head>
+<body>
+	<h1>Content Model</h1>
+
+	<!-- Div element only -->
+	<div>
+		Div1 - A new line render using  div only
+	</div>
+
+	<!-- Span elemnet only -->
+	<span>
+		Span 1 - A line render using span only
+	</span>
+
+	<!-- Span inside the div as per the rule of content model -->
+	<div>
+		Div 2 
+	<span>
+		- Span 2 displays inside Div 2
+    </span>  
+    </div>
+
+    <!-- Div inside span violate the rule. incorrect use of tags--> 
+   <span>
+   	Span 3
+   	<div>
+   		Div 3 displays inside Span 3
+   	</div>
+   </span>
+
+</body>
+</html>
+
+
