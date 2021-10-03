@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Code Editor </title>
+	<style>
+div {text-align: center;}
+</style>
+</head>
+<body style="background-color:grey;">
+	<h1 style="text-align: center;"> Code Editor </h1>
+	<div class="codeeditor">
+		<textarea id="html-area" rows="12" cols="50"> </textarea>
+		<textarea id="css-area" rows="12" cols="50"> </textarea>
+		<textarea id="script-area" rows="12" cols="50"> </textarea>		
+	</div>
+	<br>
+	<div>
+		<!-- <button class="buttonruncode" id="run" onclick="run()" style="background-color: green;color: white; padding: 15px 32px;   text-align: center;   font-size: 16px;   margin: 4px 2px;   cursor: pointer;  width: 250px;">Run </button> -->
+	</div><br>
+	<div class="outputeditor">	
+	<iframe id="output-frame" width="1200" height="250" ></iframe>
+	</div>
+	<script type="text/javascript">
+		function run(){
+			let htmlCode=document.querySelector(".codeeditor #html-area").value;
+			let cssCode="<style>"+document.querySelector(".codeeditor #css-area").value+"</style>";
+			let scriptCode=document.querySelector(".codeeditor #script-area").value;
+			let output =document.querySelector(".outputeditor #output-frame");
+			output.contentDocument.body.innerHTML=htmlCode+cssCode;
+			output.contentWindow.eval(scriptCode);
+		}
+		document.querySelector(".codeeditor #html-area").addEventListener("keyup",run);
+		document.querySelector(".codeeditor #css-area").addEventListener("keyup",run);
+		document.querySelector(".codeeditor #script-area").addEventListener("keyup",run);
+	</script>
+</body>
+</html>
