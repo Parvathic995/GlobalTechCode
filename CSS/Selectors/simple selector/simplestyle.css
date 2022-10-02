@@ -1,0 +1,18 @@
+ /**element name - div **/
+div{ 
+	background-color: lawngreen;
+}
+ /**element id- divId **/
+#divId{
+	background-color: skyblue;
+}
+ /**element class divClass **/
+.divClass{
+	background-color: grey;
+}
+
+/** universal selector (*)  **/
+* { 
+  text-align: center; 
+  }
+
