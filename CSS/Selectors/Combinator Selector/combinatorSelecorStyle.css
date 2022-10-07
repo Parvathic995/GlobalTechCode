@@ -1,0 +1,23 @@
+/** Elament (Name) selector  with Class Selctor(.) **/
+p.ElementWithClass{
+	font-size: x-large;
+	font-weight: bold;
+	background-color: grey;
+}
+/** Child Selector (>) **/
+div>p{
+	background-color: greenyellow;
+}
+/** Descendant Selector  **/
+article p{
+	background-color: skyblue;
+}
+/** Adjacent Sibling Selector (+) **/
+div+p{
+background-color: red;
+}
+/** General Sibling Selector (~) **/
+article~h3{
+	background-color: burlywood;
+}
+      
