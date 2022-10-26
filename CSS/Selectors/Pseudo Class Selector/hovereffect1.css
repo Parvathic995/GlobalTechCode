@@ -1,0 +1,17 @@
+body{
+	background-image: url("css  bk1.jpg");
+	color: black;
+	text-align: center;
+}
+h1{
+	background-color: white;
+}
+button{
+	background-color:yellowgreen ;
+	font-size: x-large;
+}
+button:hover{
+background-color: green;
+font-size: xx-large;
+
+}
