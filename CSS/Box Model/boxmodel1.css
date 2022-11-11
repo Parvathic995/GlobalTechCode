@@ -1,0 +1,23 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+body{	    
+		background-image: url(bk1.jpg);
+		color: white;
+	}
+	
+	#box{
+		margin: 50px;
+		padding: 30px;
+		background-color: green;
+		border: 20px solid black;
+		width: 200px;
+		box-sizing: border-box;
+	}
+	#content{
+		background-color: blue;
+	}
+	h1{
+		margin-bottom: 100px;
+	}
