@@ -1,0 +1,43 @@
+
+
+
+h1{
+	margin-top: 50px;
+	text-align: center;
+	font-family: 'Roboto Slab', serif;
+	font-size: 45px;
+}
+
+body
+{
+	 background:url('images/piatto-apertura-home-max-res-DESK-2560x1276.jpg');
+  	 color: white;
+}
+div{
+	        margin-top: 40px;
+			height: 230px;
+			align-items: center;
+			background-color: white;
+}
+
+
+img{
+			width: 270px;
+			height: 200px;
+			border: 7px solid Blue;		
+			margin-left: 70px;
+			margin-right: 20px;
+			float: left;
+			padding: 10px;
+			margin-top: 20px;
+				background-color:white;
+		}
+		
+		#section1{			
+			text-align: center;
+			font-family: 'Lobster', cursive;
+			margin-top: 20px;
+            font-size: 25px;
+			margin-bottom: 20px;
+			color:hotpink;
+		}
