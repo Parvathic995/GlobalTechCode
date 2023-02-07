@@ -1,0 +1,24 @@
+#img1{
+	height: 200px;
+    width: 200px;
+  border: darkslategrey 10px solid;
+  position: sticky;
+  top:100px;
+
+}
+#img2{
+	height: 200px;
+  width: 200px;
+  border: darkslategrey 10px solid;
+  position: absolute;
+  top:50px;
+  left:250px;
+}
+div.div1{
+	height: 300px;
+  width: 600px;
+  border: darkslategrey 10px solid;
+  position: relative;
+}
+
+}
