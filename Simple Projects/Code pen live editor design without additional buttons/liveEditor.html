@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<head>
+	<link rel="stylesheet" type="text/css" href="liveeditor.css">
+</head>
+<header>
+	<h1>Global Tech Code</h1>
+	<button class="buttonruncode" id="run" >Run </button> 
+	</header>
+	<body>
+		<div class="codeeditor">
+		<section >
+		<h4 class="htmlText">HTML</h4>
+		<textarea id="html-area" r> </textarea>		
+	</section>
+	<section>
+		<h4 class="cssText">	CSS</h4>
+		<textarea id="css-area"> </textarea>
+	</section>
+
+	<section >
+		<h4 class="jsText">	JS 	</h4>
+	    <textarea id="script-area" > </textarea>	
+	</section>
+</div>
+<div class="outputeditor">	
+	<iframe id="output-frame" width="1200" height="250" ></iframe>
+	</div>
+ <script type="text/javascript">
+		function run(){
+			let htmlCode=document.querySelector(".codeeditor #html-area").value;
+			let cssCode="<style>"+document.querySelector(".codeeditor #css-area").value+"</style>";
+			let scriptCode=document.querySelector(".codeeditor #script-area").value;
+			let output =document.querySelector(".outputeditor #output-frame");
+			output.contentDocument.body.innerHTML=htmlCode+cssCode;
+			output.contentWindow.eval(scriptCode);
+		}
+		document.querySelector(".codeeditor #html-area").addEventListener("keyup",run);
+		document.querySelector(".codeeditor #css-area").addEventListener("keyup",run);
+		document.querySelector(".codeeditor #script-area").addEventListener("keyup",run);
+		
+	</script>
+	</body>
+	</html>
