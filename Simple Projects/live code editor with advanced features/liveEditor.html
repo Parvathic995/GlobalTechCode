@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<head>
+	<link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.52.2/codemirror.min.css">
+  <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.52.2/theme/monokai.min.css">
+	<link rel="stylesheet" type="text/css" href="liveeditor.css"> 
+	
+</link>
+
+</head>
+<header>
+	<h1>Global Tech Code</h1>
+	<button class="buttonruncode" onclick="run()" id="run" >Run </button> 
+	</header>
+	<body>
+		<script type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.52.2/codemirror.min.js">
+</script>
+<script type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.52.2/mode/javascript/javascript.min.js">
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.2/mode/xml/xml.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.52.2/mode/css/css.min.js"></script>
+
+<!-- CodeMirror core auto close tags in html files -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.52.2/addon/edit/closetag.min.js"></script>
+
+
+		<div class="codeeditor">
+		<section >
+		<h4 class="htmlText">HTML</h4>
+		<div id="html-area"> </div>		
+	</section>
+	<section>
+		<h4 class="cssText">	CSS</h4>
+		<div id="css-area"> </div>
+	</section>
+
+	<section >
+		<h4 class="jsText">	JS 	</h4>
+	    <div id="script-area" > </div>	
+	</section>
+</div>
+<div class="outputeditor">	
+	<iframe id="output-frame" width="1200" height="250" ></iframe>
+	</div>
+	
+ <script type="text/javascript">
+
+var htmlValue=CodeMirror(document.getElementById('html-area',), {
+  lineNumbers: true,
+  value:document.getElementById("html-area").innerText ,
+  tabSize: 2,
+  mode: "text/html",
+  autoCloseTags: true, 
+   theme: 'monokai'
+});
+var cssValue=CodeMirror(document.querySelector('.codeeditor #css-area',), {
+  lineNumbers: true,
+  value:document.getElementById("css-area").innerText ,
+  tabSize: 2,
+  mode:'css',
+   theme: 'monokai'
+});
+var jsValue=CodeMirror(document.querySelector('.codeeditor #script-area',), {
+  lineNumbers: true,
+  value:document.getElementById("script-area").innerText ,
+  tabSize: 2,
+   mode: 'javascript',
+     theme: 'monokai'
+});
+		function run(){		
+			var htmlCode=htmlValue.getValue();			
+			let cssCode="<style>"+cssValue.getValue()+"</style>";
+			let scriptCode=jsValue.getValue();
+			let output =document.querySelector(".outputeditor #output-frame");
+			output.contentDocument.body.innerHTML=htmlCode+cssCode;
+			output.contentWindow.eval(scriptCode);
+		}
+
+  	
+	</script>
+	</body>
+	</html>
