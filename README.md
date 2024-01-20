@@ -27,3 +27,32 @@ https://gravitywrite.com/
 6.My First UI design in Balsamiq - Interior Design Website UI 
 
 https://balsamiq.cloud/s2g8jn/pblpfhz
+
+7.000webhost.com 
+
+web hosting website
+without installing the word press in your system you can create website using this website 
+
+8.Hostinger
+Did you know?
+000webhost was created as an educational platform by Hostinger team. At Hostinger we provide professional web hosting:
+
+WordPress sites hosted on hostinger are 5x faster;
+SEO Optimization for WordPress - you will rank higher on Google search;
+Daily backups, so your data will always be safe;
+Fast and dedicated support ready to help you;
+Migration of your current WordPress sites to Hostinger is totally free!
+Try Premium Hostinger offers from $2.15
+
+9.wordpress learn 
+
+1.delete all the plugins 
+
+A WordPress plugin is a piece of software that “plugs into” your WordPress site. Plugins can add new functionality or extend existing functionality on your site, allowing you to create virtually any kind of website, from ecommerce stores to portfolios to directory sites
+
+websitelearner -> get domain name  -> need to pay 
+blue host -install wordpress 
+
+wordpress.org -> host the wordpress website 
+
+
